@@ -16,7 +16,7 @@ let rules = [
 ];
 
 function applyRules(num) {
-    return rules.filter(rule => rule.condition(num)).map(rule => rule.result).reduce(state, newNumber => state + newNumber);
+    return rules.filter(rule => rule.condition(num)).map(rule => rule.result).reduce((state, newNumber) => state + newNumber);
 }
 
 fs.readFile("test1.txt", { encoding: "utf-8", flag: "r" }, (err, data) => {
@@ -25,7 +25,7 @@ fs.readFile("test1.txt", { encoding: "utf-8", flag: "r" }, (err, data) => {
 
     numbers = data.split(';').map(Number).forEach(num => console.log(applyRules(num)));
 
-    console.log(numbers);
+    // console.log(numbers);
 });
 
 module.exports = applyRules;
