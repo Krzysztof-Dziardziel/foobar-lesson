@@ -1,0 +1,11 @@
+{
+  "name": "foobar_lesson",
+  "version": "1.0.0",
+  "main": "foobar.js",
+  "author": "",
+  "license": "ISC",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "description": ""
+}
